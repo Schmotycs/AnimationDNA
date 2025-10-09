@@ -37,8 +37,8 @@ def make_cylinder_between(p1, p2, r=0.05, segments=10):
 
 # --- Plot vorbereiten ---
 fig = plt.figure(figsize=(14, 7), facecolor='black')  # Hintergrund schwarz
-ax3d = fig.add_subplot(121, projection='3d', facecolor='black')
-ax2d = fig.add_subplot(122, facecolor='black')
+ax3d = fig.add_subplot([0.025, 0.1, 0.43, 0.9], projection='3d', facecolor='black')
+ax2d = fig.add_subplot([0.5, 0.1, 0.3, 0.8], facecolor='black')
 
 ax3d.set_xlim(-3, 3)
 ax3d.set_ylim(-3, 3)
@@ -69,7 +69,7 @@ ax2d.text(0.5, 1.12, equation_text, transform=ax2d.transAxes,
           ha='center', va='bottom', fontsize=14, color='white')
 
 # Titel oben in der Mitte
-fig.suptitle("DNA-Doppelhelix – 3D-Animation", fontsize=18, color='white', y=0.98)
+fig.suptitle("Alles Gute zum Geburtstag", fontsize=18, color='white', y=0.98)
 
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 
@@ -112,7 +112,7 @@ def animate(frame):
 # --- Animation erstellen ---
 ani = FuncAnimation(fig, animate, frames=200, interval=50, blit=False)
 
-# GIF speichern (ohne grauen Rand)
+# GIF speichern (ohne grauen Ran d)
 ani.save("AnimationDNA/dna_animation.gif", writer=PillowWriter(fps=20), savefig_kwargs={'facecolor': 'black'})
 
 plt.show()
