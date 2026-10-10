@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/devin/OneDrive/Desktop/Projekte/AnimationDNA/media/videos/main/480p15/partial_movie_files/MeinGif/2118183852_1324958121_223132457.mp4'
+file 'file:C:/Users/devin/OneDrive/Desktop/Projekte/AnimationDNA/media/videos/main/480p15/partial_movie_files/MeinGif/366519484_1982033945_2473468610.mp4'
+file 'file:C:/Users/devin/OneDrive/Desktop/Projekte/AnimationDNA/media/videos/main/480p15/partial_movie_files/MeinGif/366519484_847192958_611713496.mp4'
